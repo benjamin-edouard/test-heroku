@@ -15,11 +15,19 @@
     </head>
     <body>
         <nav>
+            <img src="{{asset('assets/images/logo.png') }}" alt="company logo">
             <ul>
                 <li class="menu-item"><a href="{{ path('home') }}">Accueil</a></li>
+                <li class="menu-item-sep"> | </li>
                 <li class="menu-item"><a href="{{ path('home') }}">Contact</a></li>
+                <li class="menu-item-sep"> | </li>
                 <li class="menu-item"><a href="{{ path('home') }}">A propos</a></li>
             </ul>
+
+            <div>    
+                <input type="text" name="search" placeholder="Recherche">
+                <img src="{{asset('assets/images/search.png') }}" alt="search icon">
+            </div>
         </nav>
         {% block body %}{% endblock %}
 
