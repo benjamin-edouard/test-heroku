@@ -1,6 +1,10 @@
 twig:
     default_path: '%kernel.project_dir%/templates'
 
+    globals:
+        title: 'Heroku Test'
+        home_header: 'Heroku'
+
 when@test:
     twig:
         strict_variables: true

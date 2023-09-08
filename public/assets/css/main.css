@@ -1,0 +1,47 @@
+body {
+  background-color: rgb(39, 36, 36);
+  /*background-image: url('../images/main-background-2.png') */
+  /*background-attachment: fixed */
+  /*background-position: center */
+  /*background-repeat: no-repeat */
+  /*background-blend-mode: multiply */
+  margin: 0 auto;
+  height: 100vh;
+  width: 100%;
+}
+
+h1, h2, h3 {
+  color: rgb(255, 255, 255);
+  font-family: "Handlee", "sans-serif";
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+div.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: max(60%, 500px);
+  height: 90%;
+}
+
+section.home-content {
+  background-color: rgba(255, 255, 255, 0.199);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgb(19, 18, 18);
+  width: max(600px, 60%);
+  height: -moz-fit-content;
+  height: fit-content;
+}
+section.home-content p {
+  padding: 20px;
+}/*# sourceMappingURL=main.css.map */

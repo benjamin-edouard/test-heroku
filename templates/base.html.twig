@@ -2,8 +2,11 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}{{ title }}{% endblock %}</title>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        <link rel="stylesheet" href="{{asset('assets/css/main.css') }}">
+        <link rel="stylesheet" href="{{asset('assets/css/menu.css') }}">
+        <link rel="stylesheet" href="{{asset('assets/css/footer.css') }}">
         {% block stylesheets %}
         {% endblock %}
 
@@ -11,6 +14,19 @@
         {% endblock %}
     </head>
     <body>
+        <nav>
+            <ul>
+                <li class="menu-item"><a href="{{ path('home') }}">Accueil</a></li>
+                <li class="menu-item"><a href="{{ path('home') }}">Contact</a></li>
+                <li class="menu-item"><a href="{{ path('home') }}">A propos</a></li>
+            </ul>
+        </nav>
         {% block body %}{% endblock %}
+
+        <footer>
+            <p>
+                Benjamin Edouard | Tous droits réservés 2023
+            </p>
+        </footer>
     </body>
 </html>
